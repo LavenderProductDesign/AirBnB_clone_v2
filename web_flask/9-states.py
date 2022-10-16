@@ -1,4 +1,4 @@
- a Flask web application"""
+""" a Flask web application"""
 
 from models import storage
 from models.state import State
