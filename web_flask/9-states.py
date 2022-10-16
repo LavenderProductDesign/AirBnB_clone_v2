@@ -1,4 +1,4 @@
-""" a Flask web application"""
+"""a Flask web application"""
 
 from models import storage
 from models.state import State
@@ -30,6 +30,7 @@ def states_1(id=None):
 def teardown(self):
     """Removes the current SQLAlchemy Session"""
     storage.close()
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
